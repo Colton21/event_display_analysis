@@ -1,6 +1,6 @@
 <snippet>
   <content>
-Event Display Analysis
+#Event Display Analysis
 Consider the Larlite, Argo, and Bee event displays.
 Provide useful documentation (or assemble some already available) for information regarding the event displays.
 
@@ -14,7 +14,7 @@ Provide useful documentation (or assemble some already available) for informatio
   
   The larlite event display has both a 2D and a 3D viewer. The 3D viewer is rather bare-bones, but I believe this does have the ability to display truth information.
   
-#Requirements
+###Requirements
   In order to run larlite and the larlite event display we will need a few things installed already:
   1. CERN Root installation - make sure that pyROOT is enabled during installation
   2. Python (preferrably version 2.7.X release)
