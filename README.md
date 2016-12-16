@@ -1,7 +1,8 @@
 <snippet>
   <content>
-#{Event Display Analysis}
-TODO: Consider the Larlite, Argo, and Bee event displays.
+Event Display Analysis
+Consider the Larlite, Argo, and Bee event displays.
+Provide useful documentation (or assemble some already available) for information regarding the event displays.
 
 ##Event Displays
 
