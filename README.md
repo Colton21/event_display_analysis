@@ -1,9 +1,10 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 # ${1: Event Display Analysis}
-TODO: Write a project description
+TODO: Consider the Larlite, Argo, and Bee event displays.
 ## Installation
-TODO: Describe the installation process
+Larlite event display:
+
 ## Usage
 TODO: Write usage instructions
 ## Contributing
@@ -18,6 +19,6 @@ TODO: Write history
 TODO: Write credits
 ## License
 TODO: Write license
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
