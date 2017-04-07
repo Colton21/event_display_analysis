@@ -1,20 +1,20 @@
 <snippet>
   <content>
-#Event Display Analysis
+# Event Display Analysis
 Consider the Larlite, Argo, and Bee event displays.
 Provide useful documentation (or assemble some already available) for information regarding the event displays.
 
-##Event Displays
+## Event Displays
 
   All of the event displays have many buttons and configurations to keep them modular and useful for as many members of the collaboration as possible. This however means that there are many configurations that students will potentially need to deal with.
 
-##Larlite event display:
+## Larlite event display:
 
   The larlite event display takes several packages and requires a fair number of steps to setup. These steps may also vary slightly based on the OS. I have a working version on my Mac OSX, but I will try and make sure these instructions also work for Linux distributions.
   
   The larlite event display has both a 2D and a 3D viewer. The 3D viewer is rather bare-bones, but I believe this does have the ability to display truth information.
   
-###Requirements
+### Requirements
   In order to run larlite and the larlite event display we will need a few things installed already:
   1. CERN Root installation - make sure that pyROOT is enabled during installation
   2. Python (preferrably version 2.7.X release)
@@ -25,8 +25,8 @@ Provide useful documentation (or assemble some already available) for informatio
   
   For Ubuntu systems there is a good chance that Qt, sip, and PyQt4 are already installed on your system. If PyQt4 is not installed, then make sure that Qt and sip are installed before trying to installed PyQt4. [Installation tips for PyQt4](https://cdcvs.fnal.gov/redmine/projects/ubooneoffline/wiki/Larlite_Evd).
   
-###Installation
-  The first step for setting-up the larlite event display is to have larltie installed. Installing larlite is not very difficult and is outlined very clearly by Taritree Wongjirad of MicroBooNE on his [github page] (https://github.com/twongjirad/LArLiteSoftCookBook/wiki/build-and-setup-LArLite). This builds the core version of larlite.
+### Installation
+  The first step for setting-up the larlite event display is to have larlite installed. Installing larlite is not very difficult and is outlined very clearly by Taritree Wongjirad of MicroBooNE on his [github page] (https://github.com/twongjirad/LArLiteSoftCookBook/wiki/build-and-setup-LArLite). This builds the core version of larlite.
   
   For simply the commands needed to get a working build:
   
@@ -55,7 +55,7 @@ Provide useful documentation (or assemble some already available) for informatio
   ```
   Be aware that case matters!
 
-###Usage
+### Usage
 
   When entering a new session, larlite will, naturally, still be built, but you will need to make sure that you setup the same uboonecode environment used when installing larlite. In your larlite directory, make sure to once again `source config/setup.sh`.
 
@@ -71,13 +71,13 @@ Provide useful documentation (or assemble some already available) for informatio
   
   The ReadMe for the developer's GitHub page contains some additional advice, located [here] (https://github.com/coreyjadams/EventViewer). **NOTE: that repository has an out-dated version of the event display. Do not use this particular build.**
 
-##Argo Event Display:
+## Argo Event Display:
 
   Argo is a browser-based event display and as such requires no direct installation.
   
   I have a suspicion that you need an active VPN to Fermilab's network to access the event display (security and confidentiality likely).
   
-##Bee
+## Bee
 
   Bee is also a browser-based event display and requires no direct installtion. This was tested wtih Google Chrome.
   
@@ -85,7 +85,7 @@ Provide useful documentation (or assemble some already available) for informatio
   
   The event display seems to be exclusively a 3D viewer, which has a nice display. However when zooming in closely to objects, they appear to remain at the same resolution.
   
-###Usage
+### Usage
 
   Using the display seems to be extemely simple. Unless I am missing something, all of the functionality can be easily learned in 15 minutes to so. Using a combination of the mouse to rotate and zoom and the keyboard to traverse users can explore the MicroBooNE detector.
   
