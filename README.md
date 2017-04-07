@@ -1,6 +1,6 @@
 <snippet>
   <content>
-# Event Display Analysis
+# Event Display Analysis:
 Consider the Larlite, Argo, and Bee event displays.
 Provide useful documentation (or assemble some already available) for information regarding the event displays.
 
@@ -14,7 +14,9 @@ Provide useful documentation (or assemble some already available) for informatio
   
   The larlite event display has both a 2D and a 3D viewer. The 3D viewer is rather bare-bones, but I believe this does have the ability to display truth information.
   
-### Requirements
+  There is also scope to use the integrated Gallery-Framework event display available on the GPVMs. This event display functions almost identically to the Larlite event display, but has slightly different installation steps. One of the key advantages here is that we can use normal art::ROOT files, instead of larlite files.
+  
+  ### Requirements
   In order to run larlite and the larlite event display we will need a few things installed already:
   1. CERN Root installation - make sure that pyROOT is enabled during installation
   2. Python (preferrably version 2.7.X release)
@@ -25,7 +27,46 @@ Provide useful documentation (or assemble some already available) for informatio
   
   For Ubuntu systems there is a good chance that Qt, sip, and PyQt4 are already installed on your system. If PyQt4 is not installed, then make sure that Qt and sip are installed before trying to installed PyQt4. [Installation tips for PyQt4](https://cdcvs.fnal.gov/redmine/projects/ubooneoffline/wiki/Larlite_Evd).
   
-### Installation
+  Alternatively we have some options for sourcing already installed packages if we want to run this on the GPVM machines.
+  
+### Gallery-Framework Installation 
+  To setup Gallery-Framework you'll need to do the following: 
+  
+  ```
+  source /grid/fermiapp/products/uboone/setup_uboone.sh
+  source /grid/fermiapp/products/larsoft/setup
+
+  setup larsoftobj v1_13_00 -q e10:prof
+  setup larsoft v06_26_01 -q e10:prof
+  setup uboonecode v06_26_01 -q e10:prof
+  
+  git clone https://github.com/coreyjadams/gallery-framework
+
+  python -c "import ROOT"
+  python -c "from ROOT import gallery"
+
+  cd gallery-framework
+  source config/setup.sh
+  
+  ```
+  
+  The last step to get Gallery-Framework setup is to simply type `make`. Provided this builds, then you'll also need to build the Event Display code (this should overall only take a few minutes). From here you can do `cd UserDev/EventDisplay`
+  and setup a few products:
+  
+  ```
+  
+  source /uboone/app/users/cadams/pystack/setup.sh
+
+  python -c "import numpy"
+  python -c "import PyQt4"
+
+  source /UserDev/EventDisplay/setup_evd.sh
+  
+  ```
+  
+  and then simply `make` again.
+  
+### Larlite Installation
   The first step for setting-up the larlite event display is to have larlite installed. Installing larlite is not very difficult and is outlined very clearly by Taritree Wongjirad of MicroBooNE on his [github page] (https://github.com/twongjirad/LArLiteSoftCookBook/wiki/build-and-setup-LArLite). This builds the core version of larlite.
   
   For simply the commands needed to get a working build:
@@ -53,7 +94,9 @@ Provide useful documentation (or assemble some already available) for informatio
       import ROOT
       import PyQt4
   ```
-  Be aware that case matters!
+  Be aware that case matters! (You may need to do this step before building, if returned an error)
+  
+  If we are building on the GPVMs then to find some of these python products required to run the event display, consider sourcing this: `source /uboone/app/users/cadams/pystack/setup.sh`
 
 ### Usage
 
