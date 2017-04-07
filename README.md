@@ -1,12 +1,13 @@
 <snippet>
   <content>
-# Event Display Analysis:
-Consider the Larlite, Argo, and Bee event displays.
-Provide useful documentation (or assemble some already available) for information regarding the event displays.
+# Event Display Analysis
 
 ## Event Displays
 
   All of the event displays have many buttons and configurations to keep them modular and useful for as many members of the collaboration as possible. This however means that there are many configurations that students will potentially need to deal with.
+  
+  Consider the Larlite, Argo, and Bee event displays.
+Provide useful documentation (or assemble some already available) for information regarding the event displays.
 
 ## Larlite event display:
 
