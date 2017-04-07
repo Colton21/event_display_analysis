@@ -1,7 +1,5 @@
 <snippet>
   <content>
-# Event Display Analysis
-
 ## Event Displays
 
   All of the event displays have many buttons and configurations to keep them modular and useful for as many members of the collaboration as possible. This however means that there are many configurations that students will potentially need to deal with.
